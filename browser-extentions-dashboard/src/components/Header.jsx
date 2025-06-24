@@ -1,6 +1,6 @@
 import React from "react";
-import logoImg from "../assets/images/logo.svg";
-import moonImg from "../assets/images/icon-moon.svg";
+import logoImg from "/assets/images/logo.svg";
+import moonImg from "/assets/images/icon-moon.svg";
 
 const Header = ({ isDarkMode, toggleDarkMode }) => {
     return (
