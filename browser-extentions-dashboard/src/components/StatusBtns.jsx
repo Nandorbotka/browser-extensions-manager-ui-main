@@ -1,12 +1,18 @@
 import React from "react";
 import StatusBtn from "./StatusBtn";
 
-const StatusBtns = () => {
+const StatusBtns = ({ filter, setFilter }) => {
     return (
         <div className="flex justify-evenly m-auto">
-            <StatusBtn>All</StatusBtn>
-            <StatusBtn>Active</StatusBtn>
-            <StatusBtn>Inactive</StatusBtn>
+            {["all", "active", "inactive"].map((status) => (
+                <StatusBtn
+                    key={status}
+                    active={status === filter}
+                    onClick={() => setFilter(status)}
+                >
+                    {status.charAt(0).toUpperCase() + status.slice(1)}
+                </StatusBtn>
+            ))}
         </div>
     );
 };
