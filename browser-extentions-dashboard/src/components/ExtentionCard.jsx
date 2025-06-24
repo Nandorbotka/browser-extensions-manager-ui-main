@@ -40,20 +40,24 @@ const ExtentionCard = ({ filter }) => {
             {filteredExtensions.map((ext) => (
                 <div
                     key={ext.name}
-                    className="bg-white p-4 rounded-xl mt-8 max-w-96 m-auto"
+                    className="bg-white p-4 rounded-xl mt-8 max-w-96 m-auto dark:bg-slate-800"
                 >
                     <div className="flex gap-4 items-start">
                         <div>
                             <img src={ext.logo} alt="" className="h-10 w-10" />
                         </div>
                         <div>
-                            <h2 className="font-bold text-xl">{ext.name}</h2>
-                            <p>{ext.description}</p>
+                            <h2 className="font-bold text-xl dark:text-white">
+                                {ext.name}
+                            </h2>
+                            <p className="dark:text-slate-300">
+                                {ext.description}
+                            </p>
                         </div>
                     </div>
                     <div className="flex justify-between mt-8 items-center">
                         <button
-                            className="px-4 py-2 rounded-full border border-gray-300"
+                            className="px-4 py-2 rounded-full border border-gray-300 cursor-pointer hover:bg-red-600 hover:text-white dark:border-slate-700 dark:text-slate-300 dark:hover:text-black"
                             onClick={() => handleRemove(ext.name)}
                         >
                             Remove
@@ -67,7 +71,7 @@ const ExtentionCard = ({ filter }) => {
                                     toggleActive(ext.name);
                                 }}
                             />
-                            <div className="w-12 h-7 bg-gray-300 rounded-full peer-checked:bg-red-600 transition-colors"></div>
+                            <div className="w-12 h-7 bg-gray-300  rounded-full peer-checked:bg-red-600 transition-colors dark:bg-slate-600 dark:peer-checked:bg-red-600"></div>
                             <span className="w-3/6 h-5/6 bg-white absolute rounded-full top-0.5 left-1 peer-checked:translate-x-4 transition-transform"></span>
                         </label>
                     </div>
