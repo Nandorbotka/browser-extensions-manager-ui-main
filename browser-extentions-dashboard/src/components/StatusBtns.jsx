@@ -3,7 +3,7 @@ import StatusBtn from "./StatusBtn";
 
 const StatusBtns = ({ filter, setFilter }) => {
     return (
-        <div className="flex justify-evenly m-auto">
+        <div className="flex justify-center mt-4 gap-2 ">
             {["all", "active", "inactive"].map((status) => (
                 <StatusBtn
                     key={status}
