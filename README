@@ -1,0 +1,39 @@
+# Browser Extensions Manager UI
+
+Ez a projekt egy interaktív felület böngészőbővítmények (extensions) kezelésére — legyenek aktívak, inaktívak, törölhetőek és kategorizálhatóak.  
+Live verzió: https://browser-extensions-manager-ui-main-rho.vercel.app/
+
+---
+
+## 🚀 Főbb funkciók
+
+-   Bővítmények listázása aktív / inaktív státuszuk alapján
+-   Toggle (be-/kikapcsolás) funkció egyes bővítményekhez
+-   Lehetőség eltávolításra (Remove)
+-   Szűrés: „All”, „Active”, „Inactive” nézetek között
+-   Témaválasztás / színezés (ha van ilyen opció)
+-   Reszponzív megjelenítés különböző képernyőméreteken
+
+---
+
+## 🧰 Technológiák
+
+-   HTML + CSS
+-   React Js
+-   Adatszerkezet: statikus `data.json` (vagy JSON adat betöltés)
+-   Design referencia: Frontend Mentor “Browser Extension Manager UI” kihívás alapján.
+
+---
+
+## 🛠 Telepítés és futtatás helyben
+
+1. Klónozd a repót:
+
+    ```bash
+    git clone https://github.com/Nandorbotka/browser-extensions-manager-ui.git
+    cd browser-extensions-manager-ui
+
+    cd browser-extentions-dashboard
+    npm install
+    npm run dev
+    ```
